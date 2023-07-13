@@ -2,7 +2,8 @@
 
 int main(void)
 {
-	char my_strg[ ] = "Programming is like building a multilingual puzzle";
+	/*Display to standard output using put*/
+	char my_strg[] = "\"Programming is like building a multilingual puzzle";
 	puts(my_strg);
-	return 0;
+	return (0);
 }
