@@ -1,6 +1,10 @@
 #include<stdio.h>
 
-/*this is where the program starts*/
+/**
+ * main - this is where the program starts
+ * we print to standard output using puts function
+ * Return: 0
+ */
 int main(void)
 {
 	/*Display to standard output using put*/
