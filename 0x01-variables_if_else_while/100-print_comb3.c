@@ -8,18 +8,16 @@
  */
 int main(void)
 {
-	int i, j, ij;
+	int i, j;
 
-	for (i = 0, j = 0; i < 100 && j < 100; i++, j++)
+	for (i = 0, j = 0; i < 10 && j < 10; i++, j++)
 	{
-		if (i != j && ij != ji)
+		if (i != j)
 		{
-			putchar(ij + '0');
-			while (ij < 90)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(i + '0');
+			putchar(j + '0');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
