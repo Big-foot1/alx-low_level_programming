@@ -15,10 +15,10 @@ int main(void)
 	{
 		putchar(l_case);
 	}
+	putchar('\n');
 	for (u_case = 'A'; u_case <= 'z'; u_case++)
 	{
 		putchar(u_case);
 	}
-	putchar('\n');
 	return (0);
 }
