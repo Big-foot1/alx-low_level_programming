@@ -5,7 +5,7 @@
 /**
  * main - program prints a random number
  * checks whether the number is negative or positive
- * Returns: 0 (successful)
+ * return -  0 (successful)
  */
 int main(void)
 {
@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 		printf("%d is negative\n", n);
 	}
