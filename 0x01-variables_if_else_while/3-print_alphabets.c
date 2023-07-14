@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	char l_case = 'a';
-	char u_case = 'A';
+	int l_case = 'a';
+	int u_case = 'A';
 
 	/*we use for loop to print using putchar function*/
-	for (l_case = 'a'; l_case <= 'z'; l_case++)
+	for (int i = 0; i < 26; i++)
 	{
-		putchar(l_case);
+		putchar(l_case + i);
+	}
+	for (int i = 0; i < 26; i++)
+	{
+		putchar(u_case + i);
 	}
 	putchar('\n');
-	for (u_case = 'A'; u_case <= 'z'; u_case++)
-	{
-		putchar(u_case);
-	}
 	return (0);
 }
