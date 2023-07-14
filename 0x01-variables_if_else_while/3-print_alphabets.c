@@ -18,7 +18,6 @@ int main(void)
 	for (u_case = 'A'; u_case <= 'z'; u_case++)
 	{
 		putchar(u_case);
-		putchar('\n');
 	}
 	return (0);
 }
