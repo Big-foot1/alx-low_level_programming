@@ -14,8 +14,8 @@ int main(void)
 	for (l_case = 'a', u_case = 'A'; l_case <= 'z'; l_case++, u_case++)
 	{
 		putchar(l_case);
+		putchar('\n');
 		putchar(u_case);
-	}
-	putchar('\n');
+	}	
 	return (0);
 }
