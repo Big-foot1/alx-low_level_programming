@@ -9,13 +9,14 @@ int main(void)
 {
 	int l_case = 'a';
 	int u_case = 'A';
+	int i;
 
 	/*we use for loop to print using putchar function*/
-	for (int i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(l_case + i);
 	}
-	for (int i = 0; i < 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(u_case + i);
 	}
