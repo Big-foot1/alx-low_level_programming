@@ -14,10 +14,11 @@ int main(void)
 	for (l_case = 'a'; l_case <= 'z'; l_case++)
 	{
 		putchar(l_case);
-	}	
+	}
 	for (u_case = 'A'; u_case <= 'z'; u_case++)
 	{
 		putchar(u_case);
 	}
+	putchar('\n');
 	return (0);
 }
