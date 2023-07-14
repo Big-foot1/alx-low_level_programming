@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	char alpabet = 'a';
+	char l_case = 'a';
+	char u_case = 'A';
 
-	/*we use while loop to print using putchar function*/
-	while (alpabet <= 'z')
+	/*we use for loop to print using putchar function*/
+	for (l_case = 'a', u_case = 'A'; l_case <= 'z'; l_case++, u_case++)
 	{
-		putchar(alpabet);
-		alpabet++;
+		putchar(l_case);
+		putchar(u_case);
 	}
 	putchar('\n');
 	return (0);
