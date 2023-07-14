@@ -10,7 +10,7 @@ int main(void)
 	char alpabet = 'a';
 
 	/* use while loop to print alpabet */
-	while(alpabet <= 'z')
+	while (alpabet <= 'z')
 	{
 		putchar(alpabet);
 		alpabet++;
