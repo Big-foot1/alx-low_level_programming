@@ -5,7 +5,7 @@
 /**
  * main - program prints a random number
  * checks whether the number is negative or positive
- * Returns: 0
+ * Returns: 0 (successful)
  */
 int main(void)
 {
@@ -14,10 +14,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/*test if  number n is positive or negative*/
-	if (n>0){
+	if (n > 0)
+	{
 		printf("%d: is positive\n", n);
 	}
-	else if (n==0){
+	else if (n == 0)
+	{
 		printf("%d: is zero\n", n);
 	}
 	else {
