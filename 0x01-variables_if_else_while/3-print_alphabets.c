@@ -11,11 +11,14 @@ int main(void)
 	char u_case = 'A';
 
 	/*we use for loop to print using putchar function*/
-	for (l_case = 'a', u_case = 'A'; l_case <= 'z'; l_case++, u_case++)
+	for (l_case = 'a'; l_case <= 'z'; l_case++)
 	{
 		putchar(l_case);
-		putchar('\n');
-		putchar(u_case);
 	}	
+	for (u_case = 'A'; u_case <= 'z'; u_case++)
+	{
+		putchar(u_case);
+		putchar('\n');
+	}
 	return (0);
 }
