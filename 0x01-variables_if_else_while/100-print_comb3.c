@@ -16,13 +16,14 @@ int main(void)
 		{
 			if (!((i == j) || (j > i)))
 			{
-				if (i < '8' && j < '9')
-				{
-					putchar(j + '0');
-					putchar(i + '0');
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(j + '0');
+				putchar(i + '0');
+			}
+			if (j < '8' && i < '9')
+			{	
+				putchar(',');
+				putchar(' ');
+			}
 			}
 		}
 	}
