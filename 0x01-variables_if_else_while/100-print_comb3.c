@@ -16,7 +16,7 @@ int main(void)
 		{
 			if (!((i == j) || (j > i)))
 			{
-				if (i <= '9' && j <= '8')
+				if (i < '9' && j < '8')
 				{
 					putchar(j + '0');
 					putchar(i + '0');
