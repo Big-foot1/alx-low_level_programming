@@ -17,21 +17,18 @@ int main(void)
 	{
 		for (n = 1; n < 100; n++)
 		{
-			if (m < 10)
+			putchar('0' + (m / 10));
+			putchar('0' + (m % 10));
+			putchar(' ');
+			putchar('0' + (n / 10));
+			putchar('0' + (n % 10));
+			if (m < 98)
 			{
-				putchar('0' + num1);
-				putchar('0' + m);
+				putchar(',');
 				putchar(' ');
-				putchar('0' + num1);
-				putchar('0' + n);
-			}
-			else
-			{
-				putchar(m + '0');
-				putchar(' ');
-				putchar(n + '0');
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
