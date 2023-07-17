@@ -10,7 +10,7 @@
 int main(void)
 {
 	int m, n;
-	char zero = '0';
+	int zero = '0';
 
 	for (m = 0; m < 99; m++)
 	{
