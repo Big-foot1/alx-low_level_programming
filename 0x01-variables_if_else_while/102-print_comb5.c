@@ -16,12 +16,13 @@ int main(void)
 	{
 		for (n = 0; n < 100; n++)
 		{
-			if (m < 10 && n < 10)
+			if (m < 10)
 			{
 				putchar(num + '0');
 				putchar(m + '0');
 				putchar(' ');
 				putchar(num + '0');
+				putchar(n + '0');
 			}
 			else
 			{
