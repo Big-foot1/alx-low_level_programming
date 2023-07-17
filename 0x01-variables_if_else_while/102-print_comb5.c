@@ -10,7 +10,7 @@
 int main(void)
 {
 	int m, n;
-	int zero = '0';
+	int num = 0;
 
 	for (m = 0; m < 99; m++)
 	{
@@ -18,11 +18,10 @@ int main(void)
 		{
 			if (m < 10 && n < 10)
 			{
-				putchar(zero);
+				putchar(num + '0');
 				putchar(m + '0');
 				putchar(' ');
-				putchar(zero);
-				putchar(n + '0');
+				putchar(num + '0');
 			}
 			else
 			{
@@ -33,4 +32,4 @@ int main(void)
 		}
 	}
 	return (0);
-}				
+}
