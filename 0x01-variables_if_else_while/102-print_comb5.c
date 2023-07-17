@@ -10,9 +10,7 @@
 int main(void)
 {
 	int m, n;
-	int num1;
 
-	num1 = 0;
 	for (m = 0; m < 99; m++)
 	{
 		for (n = 1; n < 100; n++)
