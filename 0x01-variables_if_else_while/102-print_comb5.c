@@ -10,19 +10,19 @@
 int main(void)
 {
 	int m, n;
-	int num = 0;
+	int num1 = 0;
 
 	for (m = 0; m < 99; m++)
 	{
-		for (n = 0; n < 100; n++)
+		for (n = 1; n < 100; n++)
 		{
 			if (m < 10)
 			{
-				putchar(num + '0');
-				putchar(m + '0');
+				putchar('0' + num1);
+				putchar('0' + m);
 				putchar(' ');
-				putchar(num + '0');
-				putchar(n + '0');
+				putchar('0'+ num1);
+				putchar('0'+ n);
 			}
 			else
 			{
