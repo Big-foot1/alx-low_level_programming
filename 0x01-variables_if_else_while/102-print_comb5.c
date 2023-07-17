@@ -10,8 +10,9 @@
 int main(void)
 {
 	int m, n;
-	int num1 = 0;
+	int num1;
 
+	num1 = 0;
 	for (m = 0; m < 99; m++)
 	{
 		for (n = 1; n < 100; n++)
@@ -21,8 +22,8 @@ int main(void)
 				putchar('0' + num1);
 				putchar('0' + m);
 				putchar(' ');
-				putchar('0'+ num1);
-				putchar('0'+ n);
+				putchar('0' + num1);
+				putchar('0' + n);
 			}
 			else
 			{
