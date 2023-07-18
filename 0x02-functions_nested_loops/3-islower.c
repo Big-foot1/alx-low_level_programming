@@ -3,15 +3,15 @@
 
 /**
  * _islower - checks for lowercase character 'c'
- * Return: 1 if c is lowercase
- * c - check if character is lowercase
- * Return: 0 otherwise
+ * Return: 1 if c is lowercase otherwise 0
+ *@c: number to pass to _islower function
  */
 
 int _islower(int c)
 {
 	int result = 0;
-	if (c == 99)
+
+	if (c >= 97 && c <= 122)
 	{
 		result = 1;
 	}
