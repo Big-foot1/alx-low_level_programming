@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * main - program prints lower case alphabet
+ * print_alphabet - program prints lower case alphabet
  * using only two _putchar
  * ends with a new line
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alphabet = 'a';
 
@@ -16,5 +16,4 @@ int main(void)
 		_putchar(alphabet);
 	}
 	_putchar('\n');
-	return (0);
 }
