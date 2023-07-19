@@ -14,7 +14,8 @@ void print_to_98(int n)
 	{
 		for (i = 0; i <= 98; i++)
 		{
-			_putchar(n + '0');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -23,7 +24,8 @@ void print_to_98(int n)
 	{
 		for (j = 0; j > 98; j--)
 		{
-			_putchar(n + '0');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
