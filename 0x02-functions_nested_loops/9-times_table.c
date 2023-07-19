@@ -21,14 +21,14 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else if (multiple >= 10 && column <= 9)
+			else if (multiple >= 10 && rows  <= 9)
 			{
 				_putchar((multiple / 10) + '0');
 				_putchar((multiple % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (multiple >= 10 && column == 10)
+			else if (multiple >= 10 && rows == 10)
 			{
 				_putchar((multiple / 10) + '0');
 				_putchar((multiple % 10) + '0');
