@@ -14,12 +14,16 @@ void times_table(void)
 		for (column = 0; column < 10; column++)
 		{
 			multiple = rows * column;
-			_putchar(multiple + '0');
+			if (rows == 0)
+			{
+				_putchar(multiple + '0');
+			}
 			if (multiple < 10 && rows != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(multiple + '0');
 			}
 			else if (multiple >= 10)
 			{
