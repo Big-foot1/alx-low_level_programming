@@ -10,12 +10,11 @@
 void puts2(char *str)
 {
 	char end_char = '\0';
-	int i = 0;
+	char two_chars;
 
 	while (*(str + i) != end_char)
 	{
-		_putchar(*(str + i));
-		i += 2;
+		two_chars = str[::2];
 	}
 	_putchar('\n');
 }
