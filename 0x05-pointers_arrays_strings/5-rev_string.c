@@ -14,7 +14,7 @@ int _strlen(char *s)
 	char end_char = '\0';
 	int i = 0;
 
-	while (s[i] != end_char)
+	while (*(s + i) != end_char)
 	{
 		i++;
 	}
@@ -30,9 +30,16 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int i = 0;
-
-	for ((i = _strlen(s) - 1); i >= 0; i--)
+	char *original_string = s;
+	char *reversed_string = s + _strlen(s) -1
+	
+	while (original_string < reversed_string)
 	{
-		fputc(s[i], stdout);
+		char swap = *original_string;
+
+		*original_string = *reversed_string;
+		*reversed_string = swap;
+		original_string++;
+		reversed_string--;
 	}
 }
