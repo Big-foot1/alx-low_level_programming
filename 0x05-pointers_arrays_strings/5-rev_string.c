@@ -30,7 +30,7 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	char *original_string = s;
-	char *reversed_string = s + _strlen(s) -1;
+	char *reversed_string = s + _strlen(s) - 1;
 	
 	while (original_string < reversed_string)
 	{
