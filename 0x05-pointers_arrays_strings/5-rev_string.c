@@ -29,7 +29,6 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int i = 0;
 	char *original_string = s;
 	char *reversed_string = s + _strlen(s) -1;
 	
