@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = end_char;
 	}
-	while (i >= n && src[i] != end_char)
+	while (i < n && src[i] != end_char)
 	{
 		dest[i] = src[i];
 		i++;
