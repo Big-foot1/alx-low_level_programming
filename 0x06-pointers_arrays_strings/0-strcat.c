@@ -13,28 +13,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char first_string[MAX_LENGTH], second_string[MAX_LENGTH];
 	int i, j;
 	char end_char = '\0';
 
-	*dest = first_string;
-	*src = second_string;
 	i = 0;
 	j = 0;
 
-	while (first_string[i] != end_char)
+	while (*(dest + 1) != end_char)
 	{
-		++dest;
 		i++;
 	}
-	while (second_string[j] != end_char)
+	while (*(src + 1) != end_char)
 	{
 		*dest = *src;
-		dest++;
-		src++;
+		i++;
 		j++;
 	}
-	first_string[i] = end_char;
-	printf("%s", first_string);
-	return (0);
+	*(dest + 1) = end_char;
+	return (*dest);
 }
