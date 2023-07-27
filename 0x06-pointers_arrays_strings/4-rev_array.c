@@ -11,13 +11,20 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
-	int aray;
+	int i, *last_address, temp;
 
-	for (i = n - 1; i >= 0; i--)
+	i = 0;
+	last_address = a + (n - 1);
+	while (i < n)
 	{
-		aray = *(a + i);
-		*(a + i) = *(a + (n - 1));
-		*(a + (n - 1)) = aray;
+		if (a < last_address)
+		{
+			temp = *a;
+			*a = *last_address;
+			*last_address = temp;
+		}
+		i++;
+		a++;
+		last_address--;
 	}
 }
