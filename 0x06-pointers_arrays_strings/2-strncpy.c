@@ -33,12 +33,12 @@ char *_strncpy(char *dest, char *src, int n)
 	char end_char = '\0';
 	int i = 0;
 
-	while (_strlen(src) < n)
+	while (_strlen(src[i]) < n)
 	{
 		dest[i] = end_char;
 		i++;
 	}
-	while ((_strlen(src) < n) && src[i] != end_char)
+	while ((_strlen(src[i]) < n) && src[i] != end_char)
 	{
 		dest[i] = src[i];
 		i++;
