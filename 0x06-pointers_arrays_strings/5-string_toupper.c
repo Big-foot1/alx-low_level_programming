@@ -10,21 +10,11 @@
 
 char *string_toupper(char *str)
 {
-	int i;
-	char end_char = '\0';
-
-	i = 0;
-
-	while (str[i] != end_char)
+	while (*str) {
+        if (*str >= 'a' && *str <= 'z')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			return (str[i] - ('a' - 'A'));
-		}
-		else
-		{
-			return (str[i]);
-		}
+		*str = *str - ('a' - 'A');
 	}
-	return (str);
-}[
+	str++;
+	}
+}
