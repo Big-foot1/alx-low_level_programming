@@ -2,8 +2,6 @@
 #include "stdio.h"
 #include "string.h"
 
-#define MAX_LENGTH 100
-
 /**
  * _strcat - function concatinates two strings
  * @dest: String passed to the function
@@ -19,16 +17,16 @@ char *_strcat(char *dest, char *src)
 	i = 0;
 	j = 0;
 
-	while (*(dest + 1) != end_char)
+	while (dest[i] != end_char)
 	{
 		i++;
 	}
-	while (*(src + 1) != end_char)
+	while (src[j] != end_char)
 	{
-		*dest = *src;
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
-	*(dest + 1) = end_char;
-	return (*dest);
+	dest[i] = end_char;
+	return (dest);
 }
