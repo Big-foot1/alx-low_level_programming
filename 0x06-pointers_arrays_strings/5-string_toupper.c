@@ -10,16 +10,15 @@
 
 char *string_toupper(char *str)
 {
-	int i;
-	
-	i = 0;
-	
-	while (str[i] != '\0')
+	char *upper_case = str;
+
+	while (*str != '\0')
 	{
-        if (str[i] >= 'a' && str[i] <= 'z')
-	{
-		str[i] = str[i] - 32;
+		if (*str > 96 || *str > 123)
+		{
+			*str = *str - 32;
+		}
+		str++;
 	}
-	i++;
-	}
+	return (upper_case);
 }
