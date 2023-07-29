@@ -1,9 +1,4 @@
-#include "stdio.h"
-
-/**
- * main - function prints a[2] = 98
- * Return: Always 0
- */
+#include <stdio.h>
 
 int main(void)
 {
