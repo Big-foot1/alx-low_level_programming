@@ -3,28 +3,6 @@
 #include "string.h"
 
 /**
- * _strchr - function searches string for specified character
- * @s: string to be searched
- * @c: character to be searched
- * Return: searched character
- */
-
-char *_strchr(char *s, char c)
-{
-	char end_char = '\0';
-
-	while (*s >= end_char)
-	{
-		if (*s == c)
-		{
-			return (s);
-		}
-		s++;
-	}
-	return (NULL);
-}
-
-/**
  * _strpbrk - function that returns first occurence of character from string
  * @s: pointer to string to be searched
  * @accept: pointer to string containing character
@@ -34,18 +12,18 @@ char *_strchr(char *s, char c)
 char *_strpbrk(char *s, char *accept)
 {
 	char end_char = '\0';
+	char *temp;
 
-	while (*s != end_char)
+	for (; *s != end_char; s++)
 	{
-		if (*s == *accept)
+		temp = accept;
+		for (; *temp != end_char; temp++)
 		{
-			if (*accept != end_char)
+			if (*s == *temp)
 			{
-				accept++;
+				return (s);
 			}
-			return (s);
 		}
-		s++;
 	}
-	return (NULL);
+	return (end_char);
 }
