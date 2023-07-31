@@ -39,8 +39,11 @@ char *_strpbrk(char *s, char *accept)
 	{
 		if (*s == *accept)
 		{
+			if (*accept != end_char)
+			{
+				accept++;
+			}
 			return (s);
-			accept++;
 		}
 		s++;
 	}
