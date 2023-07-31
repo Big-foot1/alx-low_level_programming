@@ -37,7 +37,7 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s != end_char)
 	{
-		if (_strchr(accept, *s) != NULL)
+		if (_strchr(accept, *s) != NULL && *s == *accept)
 		{
 			return (s);
 		}
