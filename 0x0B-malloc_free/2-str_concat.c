@@ -23,6 +23,14 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	if (s1 == NULL)
+	{
+		return (s2);
+	}
+	else if (s2 == NULL)
+	{
+		return (s1);
+	}
 	strcpy(comb_strs, s1);
 	strcat(comb_strs, s2);
 	return (comb_strs);
