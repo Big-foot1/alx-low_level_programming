@@ -15,23 +15,23 @@ char *str_concat(char *s1, char *s2)
 	char *comb_strs;
 	size_t str1_len, str2_len;
 
-	str1_len = strlen(s1);
-	str2_len = strlen(s2);
+	/* check whether provided strings are not null before */
+	/* calculating the string length*/
+	str1_len = (s1 != NULL) ? strlen(s1) : 0;
+	str2_len = (s2 != NULL) ? strlen(s2) : 0;
 	comb_strs = (char *)malloc(str1_len + str2_len + 1);
 	/* add 1 for null terminator */
 	if (comb_strs == NULL)
 	{
 		return (NULL);
 	}
-	if (s1 == NULL)
+	if (s1 != NULL)
 	{
-		return (s2);
+		strcpy(comb_strs, s1);
 	}
-	else if (s2 == NULL)
+	if (s2 != NULL)
 	{
-		return (s1);
+		strcat(comb_strs, s2);
 	}
-	strcpy(comb_strs, s1);
-	strcat(comb_strs, s2);
 	return (comb_strs);
 }
