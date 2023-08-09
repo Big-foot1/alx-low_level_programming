@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 		}
 		combined_length += ac;
 	}
-	combined_string = (char *)malloc(sizeof(char) * combined_length + 1);
+	combined_string = malloc(sizeof(char) * combined_length + 1);
 	/* add 1 for terminating character */
 	if (combined_string == NULL)
 	{
