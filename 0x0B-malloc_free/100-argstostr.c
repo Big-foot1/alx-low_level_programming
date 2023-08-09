@@ -12,29 +12,40 @@
 
 char *argstostr(int ac, char **av)
 {
-	int combined_length, i;
+	int combined_length, i, j, k;
 	char *combined_string;
 
 	combined_length = 0;
+	k = 0;
 	if (ac == 0 || av == 0)
 	{
 		return (NULL);
 	}
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
-		combined_length += strlen(av[i]);
+		for (j = 0; j < av[i][j]; j++)
+		{
+			combined_length++;
+		}
+		combined_length += ac;
 	}
-	combined_string = (char *)malloc(combined_length + 1);
+	combined_string = (char *)malloc(sizeof(char) * combined_length + 1);
 	/* add 1 for terminating character */
 	if (combined_string == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(combined_string, "");
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
-		strcat(combined_string, av[i]);
-		strcat(combined_string, "\n");
+		for (j = 0; j < av[i][j]; j++)
+		{
+			combined_string[k] = av[i][j];
+			k++;
+		}
+		if (combined_string[k] == '\0')
+		{
+			combined_string[k++] = '\n';
+		}
 	}
 	return (combined_string);
 }
