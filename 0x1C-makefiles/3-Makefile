@@ -13,4 +13,6 @@ fclean:
 	$(RM) *~ $(NAME)
 	$(RM) $(OBJ)
 re:
-	all: $(OBJ)
+	$(RM) *~ $(NAME)
+	$(RM) $(OBJ)
+	all
