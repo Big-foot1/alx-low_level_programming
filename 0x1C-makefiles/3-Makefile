@@ -14,4 +14,4 @@ fclean:
 	$(RM) $(OBJ)
 re:
 	fclean
-	all
+	all $(OBJ)
