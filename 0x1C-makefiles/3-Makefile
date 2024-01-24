@@ -15,4 +15,4 @@ fclean:
 re:
 	$(RM) *~ $(NAME)
 	$(RM) $(OBJ)
-	all
+	all $(OBJ)
